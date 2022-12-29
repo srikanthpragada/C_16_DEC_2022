@@ -1,23 +1,22 @@
-// Program to print largest of 3 numbers
-// Date : 28-DEC-2022
+// Program to print no. of days in a month
+// Date : 29-DEC-2022
 
 #include <stdio.h>
 
 void main()
 {
-   int a,b,c;
+   int month;
 
-      printf("Enter 3 numbers:");
-      scanf("%d%d%d",&a,&b,&c);
+      printf("Enter month number:");
+      scanf("%d",&month);
 
-      if(a > b && a > c)
-          printf("%d", a);
+      if(month == 2)
+         printf("28");
       else
-         if(b > c)
-            printf("%d", b);
-         else
-            printf("%d", c);
-
+        if(month == 4 || month == 6 || month == 9 || month == 11)
+           printf("30");
+        else
+           printf("31");
 }
 
 
