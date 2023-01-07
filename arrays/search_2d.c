@@ -1,5 +1,5 @@
-// Program to search using linear search
-// Date : 4-JAN-2023
+// Program to search in 2d
+// Date : 7-JAN-2023
 
 #include <stdio.h>
 
@@ -30,13 +30,17 @@ void main()
              if(a[i][j] == n)
              {
                  printf("Found at %d, %d", i,j);
-                 goto end;
+                 found = 1;
+                 break;
              }
           }
+          // Terminate outer loop if number is found
+          if(found)
+             break;
        }
 
-       end:
-       printf("\n");
+       if(!found)
+          printf("Sorry! number not found!");
 }
 
 
