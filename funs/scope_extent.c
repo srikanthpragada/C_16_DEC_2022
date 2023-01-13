@@ -9,11 +9,15 @@ void main()
 {
   float f;
 
+     g = 1;
+
 }
 
 void fun(int v)
 {
-  int n; // local extent
+  int n, g; // local extent
+
+     g = 10;
 
 }
 
